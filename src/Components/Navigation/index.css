@@ -1,0 +1,22 @@
+#navigation {
+    position: sticky;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.5);
+    float: right;
+}
+
+#navigation ul {
+    width: 50dvw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+}
+
+#navigation a {
+    color: #000;
+    font-size: x-large;
+    text-transform: uppercase;
+}

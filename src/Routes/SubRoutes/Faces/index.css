@@ -1,0 +1,15 @@
+#faces-container header {
+    display: flex;
+    align-items: center;
+    width: 100dvw;
+    justify-content: space-between;
+}
+
+#faces-container header > a {
+    font-size: x-large;
+    color: #000;
+}
+
+#faces-container header > a > h1 {
+    margin-top: 0;
+}

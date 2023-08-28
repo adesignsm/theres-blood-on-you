@@ -1,0 +1,15 @@
+#theres-blood-on-you-container header {
+    display: flex;
+    align-items: center;
+    width: 100dvw;
+    justify-content: space-between;
+}
+
+#theres-blood-on-you-container header > a {
+    font-size: x-large;
+    color: #000;
+}
+
+#theres-blood-on-you-container header > a > h1 {
+    margin-top: 0;
+}

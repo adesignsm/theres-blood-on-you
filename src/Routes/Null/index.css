@@ -1,0 +1,17 @@
+#null-container header {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    width: 100dvw;
+    height: 100dvh;
+    justify-content: center;
+}
+
+#null-container header > a {
+    font-size: 10dvw;
+    color: #000;
+}
+
+#null-container header > a > h1 {
+    margin-top: 0;
+}

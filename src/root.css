@@ -1,0 +1,32 @@
+@font-face {
+    font-family: "Heading";
+    src: url("./Assets/VCR_OSD_MONO_1.001.ttf");
+}
+
+:root {
+    --primary-font: "Heading";
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+h1, h2, li {
+    font-family: "Heading";
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: #000;
+    color: #fff !important;
+}
+
+.return-home {
+    margin-bottom: 0;
+}
