@@ -3,15 +3,29 @@
     display: flex;
     align-items: center;
     width: 100dvw;
-    height: 100dvh;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 #null-container header > a {
-    font-size: 10dvw;
+    font-size: x-large;
     color: #000;
 }
 
 #null-container header > a > h1 {
     margin-top: 0;
+}
+
+#null-container .images-container {
+    position: relative;
+    height: auto;
+    width: 90dvw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 1vw;
+    column-gap: 1vw;
+    padding: 5vw;
+}
+
+#null-container .images-container .null-image {
+    width: 100%;
 }
