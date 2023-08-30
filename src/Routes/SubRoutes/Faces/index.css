@@ -13,3 +13,31 @@
 #faces-container header > a > h1 {
     margin-top: 0;
 }
+
+#faces-container .navigation {
+    height: 90dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#faces-container .navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#faces-container .navigation ul > li > a {
+    color: #000;
+}
+
+#faces-container .navigation ul > li {
+    font-size: 5dvw;
+    text-transform: uppercase;
+}
+
+#faces-container .navigation ul > li > a:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}

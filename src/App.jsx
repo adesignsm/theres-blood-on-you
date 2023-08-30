@@ -10,6 +10,7 @@ import Archive from "./Routes/SubRoutes/Archive";
 import Contact from "./Routes/SubRoutes/Contact";
 import Work from "./Routes/SubRoutes/Work";
 import Faces from "./Routes/SubRoutes/Faces";
+import Face from "./Components/Face";
 
 const App = () => {
     return (
@@ -24,6 +25,7 @@ const App = () => {
                         <Route path="/contact" element={<Contact />} />
                         <Route path="/theres-blood-on-you/work" element={<Work />} />
                         <Route path="/theres-blood-on-you/faces" element={<Faces />} />
+                        <Route path="/theres-blood-on-you/faces/:face" element={<Face />} />
                     </Routes>
                 </BrowserRouter>
             </main>
