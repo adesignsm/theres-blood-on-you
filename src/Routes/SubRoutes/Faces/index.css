@@ -41,3 +41,38 @@
     background-color: #000;
     cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+    #faces-container header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding-left: 5vw;
+    }
+
+    #faces-container header > a > h1 {
+        font-size: xx-large;
+    }
+
+    #navigation ul {
+        width: 90dvw;
+        justify-content: flex-start;
+    }
+
+    #navigation ul > li {
+        margin-right: 2.5rem;
+    }
+
+    #navigation a {
+        font-size: medium;
+    }
+
+    #faces-container .faces-links-container {
+        height: 80dvh;
+        padding: 0;
+    }
+
+    #faces-container .faces-links-container a {
+        font-size: 10dvw;
+    }
+}

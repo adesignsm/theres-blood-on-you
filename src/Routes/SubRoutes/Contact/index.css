@@ -38,3 +38,38 @@
     font-weight: lighter;
     font-style: normal;
 }
+
+@media screen and (max-width: 768px) {
+    #contact-container header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding-left: 5vw;
+    }
+
+    #contact-container header > a > h1 {
+        font-size: xx-large;
+    }
+
+    #navigation ul {
+        width: 90dvw;
+        justify-content: flex-start;
+    }
+
+    #navigation ul > li {
+        margin-right: 2.5rem;
+    }
+
+    #navigation a {
+        font-size: medium;
+    }
+
+    #contact-container .contact-links-container {
+        height: 80dvh;
+        padding: 0;
+    }
+
+    #contact-container .contact-links-container a {
+        font-size: 10dvw;
+    }
+}

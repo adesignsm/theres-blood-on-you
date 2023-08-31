@@ -13,3 +13,66 @@
 #work-container header > a > h1 {
     margin-top: 0;
 }
+
+#work-container .navigation {
+    height: 90dvh;
+    width: 100dvw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#work-container .navigation ul {
+    list-style: none;
+    padding: 0;
+}
+
+#work-container .navigation ul > li > a {
+    color: #000;
+}
+
+#work-container .navigation ul > li {
+    font-size: 5dvw;
+    text-transform: uppercase;
+}
+
+#work-container .navigation ul > li > a:hover {
+    color: #fff;
+    background-color: #000;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+    #work-container header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding-left: 5vw;
+    }
+
+    #work-container header > a > h1 {
+        font-size: xx-large;
+    }
+
+    #navigation ul {
+        width: 90dvw;
+        justify-content: flex-start;
+    }
+
+    #navigation ul > li {
+        margin-right: 2.5rem;
+    }
+
+    #navigation a {
+        font-size: medium;
+    }
+
+    #work-container .work-links-container {
+        height: 80dvh;
+        padding: 0;
+    }
+
+    #work-container .work-links-container a {
+        font-size: 10dvw;
+    }
+}

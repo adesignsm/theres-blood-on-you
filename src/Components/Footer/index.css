@@ -1,0 +1,41 @@
+footer {
+    width: 100dvw;
+    padding-top: 2vh;
+}
+
+footer .credits-container {
+    display: flex;
+    justify-content: center;
+}
+
+footer .credits-container h3 {
+    display: flex;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    letter-spacing: 0dvw;
+}
+
+footer .credits-container h3 > a {
+    margin-left: 0.5dvw;
+    width: 1dvw;
+}
+
+footer .credits-container h3 > a:hover {
+    background-color: transparent;
+}
+
+footer .credits-container h3 > a > img {
+    width: 2dvw;
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 768px) {
+    footer .credits-container {
+        width: 95dvw;
+    }
+
+    footer .credits-container h3 > a > img {
+        width: 7dvw;
+    }
+}

@@ -6,13 +6,13 @@ import Navigation from "../Navigation";
 
 import "./index.css";
 
-const Face = () => {
-    const { face } = useParams();
+const WorkSingle = () => {
+    const { work } = useParams();
     const builder = imageUrlBuilder(sanityClient);
     const [imageData, setImageData] = useState([]);
 
     useEffect(() => {
-        document.title = `theresbloondonyou - FACES:${face}`;
+        document.title = `theresbloondonyou - WORK:${work}`;
     }, []);
 
     const urlFor = (source) => {
@@ -20,11 +20,12 @@ const Face = () => {
     }
 
     useEffect(() => {
-        sanityClient.fetch(`*[_type == "facesImages"]{facesTitle, images[]}`).then((data) => {
-            let mutatedString = face.charAt(0).toUpperCase() + face.slice(1);
-            data.map((face) => {
-                if (mutatedString === face.facesTitle) {
-                    setImageData(face.images);
+        sanityClient.fetch(`*[_type == "workImages"]{workTitle, images[]}`).then((data) => {
+            console.log(data);
+            let mutatedString = work.charAt(0).toUpperCase() + work.slice(1);
+            data.map((work) => {
+                if (mutatedString.toLowerCase() === work.workTitle.toLowerCase()) {
+                    setImageData(work.images);
                 }
             })
         }).catch((err) => {
@@ -34,9 +35,9 @@ const Face = () => {
 
     return (
         <>
-            <section id="face-container">
+            <section id="work-single-container">
                 <header>
-                    <Link to={"/"}><h1 className="return-home"> FACES: {face} </h1></Link>
+                    <Link to={"/"}><h1 className="return-home"> WORK: {work} </h1></Link>
                     <Navigation />
                 </header>
                 <div className="images-container">
@@ -44,7 +45,7 @@ const Face = () => {
                         imageData.map((image, index) => {
                             if (image.asset && image.asset._ref) {
                                 return (
-                                    <img key={index} className="face-image" src={urlFor(image.asset._ref)} loading={"lazy"}/>
+                                    <img key={index} className="work-image" src={urlFor(image.asset._ref)} loading={"lazy"}/>
                                 )
                             }
                         })
@@ -55,4 +56,4 @@ const Face = () => {
     )
 }
 
-export default Face;
+export default WorkSingle;

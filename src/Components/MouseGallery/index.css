@@ -2,7 +2,7 @@
     width: 30vmin;
     position: absolute;
     transform: translate(-50%, -50%);
-    filter: grayscale(100%)
+    filter: grayscale(100%);
 }
 
 .image[data-status="inactive"] {
@@ -23,4 +23,10 @@
     -ms-transition: opacity 0.2s ease, visibility 0s linear;
     -o-transition: opacity 0.2s ease, visibility 0s linear;
     transition: opacity 0.2s ease, visibility 0s linear;
+}
+
+@media screen and (max-width: 768px) {
+    .image {
+        top: 40vh;
+    }
 }

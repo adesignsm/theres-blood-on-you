@@ -23,15 +23,15 @@ const MouseGallery = () => {
         return Math.hypot(x - lastIndex.x, y - lastIndex.y);
     }
     
-    window.onmousemove = (e) => {
+    const handleMouseMove = (x, y) => {
         if (document.title === "theresbloodonyou" && imageData.length) {
             images = document.querySelectorAll(".image");
 
-            if (distFromLast(e.clientX, e.clientY) > 100) {
+            if (distFromLast(x, y) > 100) {
                 const lead = images[globalIndex % images.length];
                 const last = images[(globalIndex - effectCount) % images.length];
     
-                activate(lead, e.clientX, e.clientY);
+                activate(lead, x, y);
         
                 if (last) last.dataset.status = "inactive";
     
@@ -55,6 +55,16 @@ const MouseGallery = () => {
             console.log(err);
         });
     }, []);
+
+    window.onmousemove = (e) => {
+        handleMouseMove(e.clientX, e.clientY);
+    };
+
+    window.ontouchmove = (e) => {
+        const touch = e.touches[0];
+        handleMouseMove(touch.clientX, touch.clientY);
+    };
+
 
     return (
         <>

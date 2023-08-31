@@ -29,3 +29,19 @@
 #null-container .images-container .null-image {
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    #null-container header > a {
+        font-size: large;
+        color: #000;
+    }
+
+    #null-container .images-container {
+        position: relative;
+        height: auto;
+        width: 90dvw;
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 1vw;
+    }
+} 

@@ -1,4 +1,6 @@
 #entry-container {
+    top: 0;
+    left: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -24,4 +26,14 @@
 
 #entry-container .entry-navigation h2 > span {
     color: #ff0000;
+}
+
+@media screen and (max-width: 768px) {
+    #entry-container {
+       overflow-block: clip;
+    }
+
+    #entry-container .entry-navigation h2 {
+        font-size: 8vw;
+    }
 }

@@ -28,7 +28,7 @@ const Faces = () => {
                     <Link to={"/"}><h1 className="return-home"> FACES </h1></Link>
                     <Navigation />
                 </header>
-                <nav className="navigation">
+                <nav className="faces-links-container navigation">
                     <ul>
                         {faces.slice().sort((a, b) => a.localeCompare(b)).map((title, index) => {
                             return (

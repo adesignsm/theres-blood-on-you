@@ -9,8 +9,11 @@ import TheresBloodOnYou from "./Routes/TheresBloodOnYou";
 import Archive from "./Routes/SubRoutes/Archive";
 import Contact from "./Routes/SubRoutes/Contact";
 import Work from "./Routes/SubRoutes/Work";
+import WorkSingle from "./Components/WorkSingle";
 import Faces from "./Routes/SubRoutes/Faces";
 import Face from "./Components/Face";
+
+import Footer from "./Components/Footer";
 
 const App = () => {
     return (
@@ -26,7 +29,9 @@ const App = () => {
                         <Route path="/theres-blood-on-you/work" element={<Work />} />
                         <Route path="/theres-blood-on-you/faces" element={<Faces />} />
                         <Route path="/theres-blood-on-you/faces/:face" element={<Face />} />
+                        <Route path="/theres-blood-on-you/work/:work" element={<WorkSingle />} />
                     </Routes>
+                    <Footer />
                 </BrowserRouter>
             </main>
         </>

@@ -36,3 +36,35 @@
 #archive-container .images-container .archive-image {
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+    #archive-container header {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        padding-left: 5vw;
+    }
+
+    #archive-container header > a > h1 {
+        font-size: xx-large;
+    }
+
+    #navigation ul {
+        width: 90dvw;
+        justify-content: flex-start;
+    }
+
+    #navigation ul > li {
+        margin-right: 2.5rem;
+    }
+
+    #navigation a {
+        font-size: medium;
+    }
+
+    #archive-container .images-container {
+        padding-top: 15dvh;
+        grid-template-columns: 1fr;
+        row-gap: 5vh;
+    }
+}
