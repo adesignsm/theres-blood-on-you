@@ -29,10 +29,6 @@
 }
 
 @media screen and (max-width: 768px) {
-    #entry-container {
-       overflow-block: clip;
-    }
-
     #entry-container .entry-navigation h2 {
         font-size: 8vw;
     }
