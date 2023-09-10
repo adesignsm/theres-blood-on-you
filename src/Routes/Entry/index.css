@@ -29,6 +29,10 @@
 }
 
 @media screen and (max-width: 768px) {
+    #entry-container .entry-navigation {
+        mix-blend-mode: normal;
+    }
+    
     #entry-container .entry-navigation h2 {
         font-size: 8vw;
     }
