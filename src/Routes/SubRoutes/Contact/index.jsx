@@ -4,6 +4,8 @@ import sanityClient from "../../../sanity";
 import Navigation from "../../../Components/Navigation";
 import "./index.css";
 
+import Footer from "../../../Components/Footer";
+
 const Contact = () => {
     const [contactData, setContactData] = useState([]);
 
@@ -39,6 +41,7 @@ const Contact = () => {
                     </ul>
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

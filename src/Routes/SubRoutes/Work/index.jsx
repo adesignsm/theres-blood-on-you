@@ -4,6 +4,8 @@ import { Link } from "react-router-dom";
 import Navigation from "../../../Components/Navigation";
 import "./index.css";
 
+import Footer from "../../../Components/Footer";
+
 const Work = () => {
     const [work, setWorkData] = useState([]);
 
@@ -37,6 +39,7 @@ const Work = () => {
                     </ul>
                 </nav>
             </section>
+            <Footer />
         </>
     )
 }

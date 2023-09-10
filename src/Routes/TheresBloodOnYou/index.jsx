@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import sanityClient from "../../sanity";
 import imageUrlBuilder from "@sanity/image-url";
 import Navigation from "../../Components/Navigation";
+import Footer from "../../Components/Footer";
 import "./index.css";
 
 const TheresBloodOnYou = () => {
@@ -45,6 +46,7 @@ const TheresBloodOnYou = () => {
                     }
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

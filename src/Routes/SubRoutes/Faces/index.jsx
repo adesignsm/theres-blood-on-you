@@ -5,6 +5,8 @@ import imageUrlBuilder from "@sanity/image-url";
 import Navigation from "../../../Components/Navigation";
 import "./index.css";
 
+import Footer from "../../../Components/Footer";
+
 const Faces = () => {
     const [faces, setFaceData] = useState([]);
 
@@ -38,6 +40,7 @@ const Faces = () => {
                     </ul>
                 </nav>
             </section>
+            <Footer />
         </>
     )
 }

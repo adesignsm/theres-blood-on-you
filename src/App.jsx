@@ -13,8 +13,6 @@ import WorkSingle from "./Components/WorkSingle";
 import Faces from "./Routes/SubRoutes/Faces";
 import Face from "./Components/Face";
 
-import Footer from "./Components/Footer";
-
 const App = () => {
     return (
         <>
@@ -31,7 +29,6 @@ const App = () => {
                         <Route path="/theres-blood-on-you/faces/:face" element={<Face />} />
                         <Route path="/theres-blood-on-you/work/:work" element={<WorkSingle />} />
                     </Routes>
-                    <Footer />
                 </BrowserRouter>
             </main>
         </>

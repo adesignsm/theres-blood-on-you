@@ -5,6 +5,8 @@ import imageUrlBuilder from "@sanity/image-url";
 
 import "./index.css";
 
+import Footer from "../../Components/Footer";
+
 const Null = () => {
     const [imageData, setImageData] = useState([]);
 
@@ -68,6 +70,7 @@ const Null = () => {
                     }
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

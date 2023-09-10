@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import sanityClient from "../../sanity";
 import imageUrlBuilder from "@sanity/image-url";
 import Navigation from "../Navigation";
+import Footer from "../Footer";
 
 import "./index.css";
 
@@ -52,6 +53,7 @@ const WorkSingle = () => {
                     }
                 </div>
             </section>
+            <Footer />
         </>
     )
 }

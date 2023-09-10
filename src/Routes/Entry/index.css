@@ -36,4 +36,12 @@
     #entry-container .entry-navigation h2 {
         font-size: 8vw;
     }
+
+    #entry-container .entry-navigation a {
+        color: #fff;
+    }
+
+    #entry-container .entry-navigation h2 > span {
+        color: #ff0000;
+    }
 }
