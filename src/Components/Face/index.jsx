@@ -24,8 +24,11 @@ const Face = () => {
         sanityClient.fetch(`*[_type == "facesImages"]{facesTitle, images[]}`).then((data) => {
             let mutatedString = face.charAt(0).toUpperCase() + face.slice(1);
             data.map((face) => {
-                if (mutatedString === face.facesTitle) {
+                console.log(face.facesTitle, mutatedString)
+                if (mutatedString.toLowerCase() === face.facesTitle.toLowerCase()) {
                     setImageData(face.images);
+                } else {
+                    console.log("not found");
                 }
             })
         }).catch((err) => {

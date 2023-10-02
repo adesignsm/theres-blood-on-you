@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../../sanity";
-import imageUrlBuilder from "@sanity/image-url";
 import Navigation from "../../../Components/Navigation";
 import "./index.css";
 
