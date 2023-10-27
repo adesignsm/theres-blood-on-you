@@ -22,11 +22,13 @@ const WorkSingle = () => {
 
     useEffect(() => {
         sanityClient.fetch(`*[_type == "workImages"]{workTitle, images[]}`).then((data) => {
-            console.log(data);
+            console.log(work)
             let mutatedString = work.charAt(0).toUpperCase() + work.slice(1);
             data.map((work) => {
                 if (mutatedString.toLowerCase() === work.workTitle.toLowerCase()) {
                     setImageData(work.images);
+                } else {
+                    console.log("not found");
                 }
             })
         }).catch((err) => {

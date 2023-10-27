@@ -7,7 +7,7 @@ export default {
             name: "theresbloodonyouTitle",
             title: "Title of the image set",
             type: "string",
-            description: "Title of the image set",
+            description: "Title of the image set (Check for any trailing spaces in the title you set! Otherwise the images wont show up).",
         },
         {
             name: "images",

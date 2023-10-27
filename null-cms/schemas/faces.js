@@ -7,7 +7,7 @@ export default {
             name: "facesTitle",
             title: "Name of the Face",
             type: "string",
-            description: "The name of the face",
+            description: "The name of the face (Check for any trailing spaces in the name you set! Otherwise the names wont show up).",
         },
         {
             name: "images",

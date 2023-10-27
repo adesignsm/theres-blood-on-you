@@ -7,7 +7,7 @@ export default {
             name: "contactTitle",
             title: "Title of the Contact Links set",
             type: "string",
-            description: "Title of the contact links set",
+            description: "Title of the contact links set (Check for any trailing spaces in the title you set! Otherwise the links wont show up).",
         },
         {
             name: "socialLinks",
